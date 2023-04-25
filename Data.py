@@ -47,6 +47,6 @@ class Data:
 
  • Creator: @{}
  • Framework: <a href='https://docs.pyrogram.org'>Pyrogram</a>
-
+.
 👨‍💻 Develoved by </b><a href='https://t.me/Eldipio'>@Eldipio</a>
 """
