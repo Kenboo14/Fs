@@ -152,7 +152,7 @@ def start_button(client):
 
 
 def fsub_button(client, message):
-    if not FORCE_SUB_CHANNELS and FORCE_SUB_GROUPS
+    if not FORCE_SUB_CHANNELS and FORCE_SUB_GROUPS:
         buttons = [
             [
                 InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink2),
