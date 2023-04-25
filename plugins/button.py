@@ -1,7 +1,3 @@
-# Credits: @mrismanaziz
-# FROM File-Sharing-Man <https://github.com/mrismanaziz/File-Sharing-Man/>
-# t.me/SharingUserbot & t.me/Lunatic0de
-
 from config import FORCE_SUB_CHANNEL, FORCE_SUB_GROUP
 from pyrogram.types import InlineKeyboardButton
 
@@ -19,6 +15,8 @@ def start_button(client):
         buttons = [
             [
                 InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=client.invitelink2),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink3),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink4),
             ],
             [
                 InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
@@ -30,6 +28,8 @@ def start_button(client):
         buttons = [
             [
                 InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink3),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink4),
             ],
             [
                 InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
@@ -46,6 +46,10 @@ def start_button(client):
                 InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
                 InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=client.invitelink2),
             ],
+            [
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink3),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink4),
+            ],
             [InlineKeyboardButton(text="ᴛᴜᴛᴜᴘ", callback_data="close")],
         ]
         return buttons
@@ -56,6 +60,8 @@ def fsub_button(client, message):
         buttons = [
             [
                 InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink2),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink3),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink4),
             ],
         ]
         try:
@@ -74,6 +80,8 @@ def fsub_button(client, message):
         buttons = [
             [
                 InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink3),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink4),
             ],
         ]
         try:
@@ -93,6 +101,10 @@ def fsub_button(client, message):
             [
                 InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
                 InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink2),
+            ],
+            [
+                InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink3),
+                InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink4),
             ],
         ]
         try:
