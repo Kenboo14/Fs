@@ -105,8 +105,9 @@ def fsub_button(client, message):
         return buttons
 
 
+
 def start_button(client):
-if not FORCE_SUB_CHANNELS and FORCE_SUB_GROUPS:
+    if not FORCE_SUB_CHANNELS and not FORCE_SUB_GROUPS:
         buttons = [
             [
                 InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
@@ -114,7 +115,7 @@ if not FORCE_SUB_CHANNELS and FORCE_SUB_GROUPS:
             ],
         ]
         return buttons
-    if not FORCE_SUB_CHANNELL and FORCE_SUB_GROUPP:
+    if not FORCE_SUB_CHANNELS and FORCE_SUB_GROUPS:
         buttons = [
             [
                 InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=client.invitelink2),
@@ -125,7 +126,7 @@ if not FORCE_SUB_CHANNELS and FORCE_SUB_GROUPS:
             ],
         ]
         return buttons
-    if FORCE_SUB_CHANNELS and FORCE_SUB_GROUPS:
+    if FORCE_SUB_CHANNELS and not FORCE_SUB_GROUPS:
         buttons = [
             [
                 InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
@@ -151,7 +152,7 @@ if not FORCE_SUB_CHANNELS and FORCE_SUB_GROUPS:
 
 
 def fsub_button(client, message):
-    if not FORCE_SUB_CHANNELS and FORCE_SUB_GROUPS:
+    if not FORCE_SUB_CHANNELS and FORCE_SUB_GROUPS
         buttons = [
             [
                 InlineKeyboardButton(text="ᴊᴏɪɴ ɢʀᴏᴜᴘ", url=client.invitelink2),
@@ -169,7 +170,7 @@ def fsub_button(client, message):
         except IndexError:
             pass
         return buttons
-    if FORCE_SUB_CHANNELS and FORCE_SUB_GROUPS:
+    if FORCE_SUB_CHANNELS and not FORCE_SUB_GROUPS:
         buttons = [
             [
                 InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),                
